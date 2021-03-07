@@ -24,7 +24,6 @@ public class PersonCreator implements CommandLineRunner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PersonCreator.class);
 
-    private RestTemplate restTemplate;
     private final RabbitTemplate rabbitTemplate;
     private final ConfigurableApplicationContext context;
     private final ObjectMapper objectMapper;
@@ -32,7 +31,6 @@ public class PersonCreator implements CommandLineRunner {
     @Autowired
     public PersonCreator(RabbitTemplate rabbitTemplate, ConfigurableApplicationContext context, ObjectMapper objectMapper){
         super();
-        this.restTemplate = new RestTemplate();
         this.rabbitTemplate = rabbitTemplate;
         this.context = context;
         this.objectMapper = objectMapper;
