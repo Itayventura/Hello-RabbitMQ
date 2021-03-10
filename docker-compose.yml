@@ -55,7 +55,6 @@ services:
       - SPRING_CLOUD_CONFIG_DISCOVERY_ENABLED=true
       - SPRING_CLOUD_LOADBALANCER_RIBBON_ENABLED=false
       - SPRING_RABBITMQ_HOST=rabbitmq
-#      - SPRING_CLOUD_CONFIG_FAILFAST=true
     ports:
       - "8801:8801"
     restart: on-failure
@@ -73,7 +72,6 @@ services:
       - SPRING_CLOUD_CONFIG_DISCOVERY_ENABLED=true
       - SPRING_CLOUD_LOADBALANCER_RIBBON_ENABLED=false
       - SPRING_RABBITMQ_HOST=rabbitmq
-#      - SPRING_CLOUD_CONFIG_FAILFAST=true
     ports:
       - "8802:8802"
     restart: on-failure
